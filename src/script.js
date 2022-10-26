@@ -231,14 +231,14 @@ for (let i = 0; i < namesArr.length; i++) {
 
 // =================================
 
-const arr = [1, 2, 3, 4, 5, 6, 1, 3, 4, 1, 4, 6, 7, 2, 4, 5];
+// const arr = [1, 2, 3, 4, 5, 6, 1, 3, 4, 1, 4, 6, 7, 2, 4, 5];
 
-const arrNew = [];
+// const arrNew = [];
 
-for (let elem of arr) {
-  if (!arrNew.includes(elem)) {
-    arrNew.push(elem);
-  }
-}
+// for (let elem of arr) {
+//   if (!arrNew.includes(elem)) {
+//     arrNew.push(elem);
+//   }
+// }
 
-console.log(arrNew);
+// console.log(arrNew);
