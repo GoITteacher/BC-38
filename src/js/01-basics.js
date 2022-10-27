@@ -66,10 +66,75 @@
 // }
 
 // console.log(find(10, arr));
-
 // const res = foo();
 // console.log(res);
+
+// foo();
+// function foo() {
+//   console.log('foo');
+// }
+// foo();
+
+// foo1();
+// const foo1 = function () {
+//   console.log('foo1');
+// };
+// foo1();
+
+//==========================
+
+// function f1(){
+//     const x = 10;
+// }
+
+// function f2(){
+//     const x = 20;
+// }
+
+// console.log(x);
+
+// const users = [];
+
+// function filterUsers(array){
+
+// }
 
 /*
  * - Стек вызовов
  */
+
+// function bar() {
+//   console.log('bar');
+// }
+
+// function baz() {
+//   console.log('baz');
+// }
+
+// function foo() {
+//   console.log('foo');
+//   bar();
+//   baz();
+// }
+
+// foo();
+// foo();
+// foo();
+
+// function sum(x, y) {
+//   x = pow(x);
+//   y = pow(y);
+
+//   return x + y;
+// }
+
+// function pow(num) {
+//   return num * num;
+// }
+// sum(2, 4);
+// sum(4, 5);
+// function foo() {
+//   foo();
+//   return 1;
+// }
+// foo();
