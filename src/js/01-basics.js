@@ -10,6 +10,14 @@
  * - Function expression (функціональний вираз)
  */
 
+// function sum(x, y) {
+//   x *= x;
+//   y = y * y;
+//   return x + y;
+// }
+// const result = sum(59, 12);
+// console.log(result);
+
 /*
  * - Стек вызовов
  * - Stack trace и поиск ошибок
