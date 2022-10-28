@@ -169,3 +169,68 @@ add(1, 2, 3, 2, 4, 1, 56, 7, 2, 21); */
 // console.log(res);
 
 // ======================================
+
+// function drawACross(n) {
+//   const matrix = createArray(n);
+
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n; j++) {
+//       if (i === j || i + j === n - 1) {
+//         matrix[i][j] = 'x';
+//       }
+//     }
+//   }
+
+//   let result = matrix.join('\n');
+//   while (result.includes(',')) {
+//     result = result.replace(',', '');
+//   }
+
+//   console.log(result);
+//   return result;
+// }
+
+// function createArray(n) {
+//   const array = [];
+
+//   for (let i = 0; i < n; i++) {
+//     const matrixArr = [];
+//     for (let j = 0; j < n; j++) {
+//       matrixArr.push(' ');
+//     }
+//     array.push(matrixArr);
+//   }
+
+//   return array;
+// }
+
+// drawACross(5);
+
+// =======================================
+
+// function fiba(num) {
+//   if (num < 3) return 1;
+//   return fiba(num - 1) + fiba(num - 2);
+// }
+
+// function fiba2(num) {
+//   let prev1 = 1;
+//   let prev2 = 1;
+//   for (let i = 2; i < num; i++) {
+//     let prev3 = prev1 + prev2;
+//     prev1 = prev2;
+//     prev2 = prev3;
+//   }
+//   return prev2;
+// }
+
+// console.log(fiba2(10));
+
+// ======================
+
+function factorial(num) {
+  if (num < 2) return 1;
+  return factorial(num - 1) * num;
+}
+
+console.log(factorial(5));
