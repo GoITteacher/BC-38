@@ -94,4 +94,66 @@
 
 // ===================
 
-nb_year(1500000, 2.5, 10000, 2000000);
+// function nbYear(p0, percent, aug, p) {
+//   let count = 0;
+//   while (q <= p) {
+//     p0 += p0 * (percent / 100) + aug;
+//     count++;
+//   }
+//   return count;
+// }
+
+// nb_year(1500000, 2.5, 10000, 2000000);
+// ===============================
+
+// const obj = {
+//   update_id: 933443239,
+//   message: {
+//     message_id: 1224370,
+//     from: {
+//       id: 433982686,
+//       is_bot: false,
+//       first_name: 'Volodymyr',
+//       username: 'Pikimell',
+//       language_code: 'uk',
+//     },
+//     chat: {
+//       id: 433982686,
+//       first_name: 'Volodymyr',
+//       username: 'Pikimell',
+//       type: 'private',
+//     },
+//     date: 1667226985,
+//     text: 'Hello world',
+//   },
+// // };
+
+// console.log(obj.name1);
+
+const users = [
+  {
+    name: 'Volodymyr',
+    friends: ['Vasya', 'Petya'],
+  },
+
+  {
+    name: 'Petya',
+    friends: ['Vasya'],
+  },
+
+  {
+    name: 'Vasya',
+    friends: [],
+  },
+];
+
+const result = [];
+for (const user of users) {
+  for (const friend of user.friends) {
+    if (!result.includes(friend)) {
+      result.push(friend);
+    }
+  }
+}
+
+console.log(result);
