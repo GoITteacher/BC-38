@@ -1,14 +1,15 @@
 // https://habr.com/ru/post/149516/
 
 // let f = function () {
-//   this.x = 5;
+//   console.log(this);
 // };
 
 // const obj = {
 //   foo: f,
 // };
 
-// const obj1 = {};
+// const obj1 = {
+//   name: 'obj1',
+// };
 
 // obj.foo.call(obj1);
-// console.log(obj1);

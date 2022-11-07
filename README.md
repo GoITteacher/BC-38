@@ -30,15 +30,7 @@ console.log(chopShop.calcTotalPrice('Ruby')); // 1600
 ```js
 const phonebook = {
   contacts: [],
-  add(contact) {
-    const newContact = {
-      list: 'default',
-      ...contact,
-      id: generateId(),
-      createdAt: getDate(),
-    };
-    contacts.push(newContact);
-  },
+  add(contact) {},
   generateId() {
     return '_' + Math.random().toString(36).substr(2, 9);
   },

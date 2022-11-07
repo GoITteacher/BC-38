@@ -1,16 +1,17 @@
-let elem = {
+let Ukaraine = {
   value: 'Привіт',
 };
 
 function func(surname, name) {
-  let obj1 = {
-    foo: () => {
-      console.log(this);
-    },
+  const a = 10;
+
+  const foo = () => {
+    console.log(this);
+    return 'test';
   };
 
-  return obj1.foo;
+  return foo;
 }
 
-const myFunc = func.apply(elem, ['Vasya', 'Vasya1']);
+const myFunc = func();
 myFunc();

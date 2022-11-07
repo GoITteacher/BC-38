@@ -1,16 +1,19 @@
 let user1 = {
   name: 'Petya',
-  setName: function (name) {
+  setName() {
     this.name = name;
+    console.log(this);
   },
 };
+
+user1.setName();
 
 let user2 = {
   name: 'Vasya',
   age: 'TEST',
 };
 
-let newName = user1.setName.bind(user2);
+let newName = user1.setName;
 
 newName('12312');
 
