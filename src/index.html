@@ -4,11 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <title>EXAMPLE</title>
 </head>
 <body>
-    
+    <form class="js-register-form" autocomplete="off">
+        <div role="group">
+          <label>
+            UserName
+            <input class="form-control" type="text" name="username" value=""/>
+          </label><br>
+          <label>
+            Почта
+            <input class="form-control" type="email" name="email" value=""/>
+          </label>
+          <br>
+          <label>
+            Пароль
+            <input class="form-control" name="password" type="password"/>
+          </label><br>
+          <label>
+            Биография
+            <textarea class="form-control" name="bio"></textarea>
+          </label>
+        </div>
+  
+        <br />
+        <div role="group" class="form-check">
+          <b>Тип подписки:</b><br>
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="subscription" value="free"/>
+            Free
+        </label><br>
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="subscription" value="test"/>
+            Basic
+        </label><br>
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="subscription" value="pro" />
+            Pro  
+        </label><br>
+        </div>
+
+        <br />
+        <div class="form-check">
+          <b>Рассылки:</b><br>
+          <label>
+            <input class="form-check-input" type="checkbox" name="spam1" value="spam1"/>
+            Spam for email
+          </label><br>
+          <label>
+            <input class="form-check-input" type="checkbox" name="spam2" value="spam2"/>
+            Spam for mobile
+          </label><br>
+          <label>
+            <input class="form-check-input" type="checkbox" name="spam3" value="spam3" />
+            Spam for telegram
+          </label><br>
+        </div>
+        <br />
+        <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
+      </form>
+
+      <div class="backdrop js-backdrop">
+        <div class="modal">
+          <h2>USER NAME</h2>
+          <p>
+            In user interface design for computer applications, a modal window is
+            a graphical control element subordinate to an application's main
+            window. It creates a mode that disables the main window but keeps it
+            visible, with the modal window as a child window in front of it. Users
+            must interact with the modal window before they can return to the
+            parent application. This avoids interrupting the workflow on the main
+            window. Modal windows are sometimes called heavy windows or modal
+            dialogs because they often display a dialog box.
+          </p>
+          <button type="button" class="btn btn-primary" data-action="close-modal">
+            Закрыть
+          </button>
+        </div>
+      </div>
     <script src="scripts/script1.js"></script>
 </body>
 </html>
