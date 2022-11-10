@@ -1,4 +1,4 @@
-[
+const posts = [
   {
     postId: 1,
     id: 1,

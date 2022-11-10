@@ -232,3 +232,24 @@ const users = [
   },
 ];
 // ====================
+const tableUser = document.querySelector('.js-table-users');
+function createTableUser(users) {
+  return users
+    .sort((b, a) => {
+      return a.name.localeCompare(b.name);
+    })
+    .map(user => {
+      return ` <tr>
+      <td>${user.name}</td>
+      <td>${user.email}</td>
+      <td><a href='${user.website}'>${user.website}</a></td>
+      <td>Adress: ${user.address.city} ${user.address.street} ${user.address.suite}</td>
+    </tr>
+    `;
+    })
+    .join('');
+}
+tableUser.innerHTML = createTableUser(users);
+let count = users.filter(el => el.email.endsWith('.biz')).length;
+const markup = `<h4>Count website with ".biz" - ${count}</h4>`;
+tableUser.insertAdjacentHTML('afterend', markup);

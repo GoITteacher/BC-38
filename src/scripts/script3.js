@@ -459,3 +459,30 @@ const photos = [
 ];
 
 // ========================
+
+const imageList = document.querySelector('.js-image-list');
+
+console.dir(imageList);
+function makeMarkupImageList(array, albumId) {
+  return array.map(item => {
+    const imagEl = document.createElement('img');
+    imagEl.src = item.url;
+    imagEl.alt = item.title;
+
+    if (item.albumId === albumId) {
+      imagEl.classList.add('active');
+    }
+    return imagEl;
+  });
+}
+
+function showImg() {
+  const items = makeMarkupImageList(photos, 1);
+  imageList.append(...items);
+}
+
+showImg();
+
+/* 
+
+*/
