@@ -11,11 +11,14 @@
 </head>
 <body>
   <a href="./delegations.html">Delegations</a>
+  
     <form class="js-register-form box" autocomplete="off">
+      <input id="js-input-size" type="range" min="1" max="6" />
+          
         <div role="group">
           <label>
             UserName
-            <input class="form-control js-input-username" type="text" name="username" value="" data-max-length="6"/>
+            <input class="form-control js-input-username" type="text" name="username" value="" data-max-length="3"/>
           </label><br>
           <label>
             Почта
@@ -64,8 +67,7 @@
             <input class="form-check-input" type="checkbox" name="spam3" value="spam3" />
             Spam for telegram
           </label><br>
-          <input id="font-size-control" type="range" min="16" max="96" />
-          <input type="color">
+          <input type="color" id="js-input-color">
         </div>
         <br />
         <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
