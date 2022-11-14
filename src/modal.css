@@ -9,9 +9,10 @@ body.show-modal .modal {
 }
 
 .backdrop {
+  padding: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,6 +25,7 @@ body.show-modal .modal {
   opacity: 0;
   visibility: hidden;
   transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+  overflow-y: auto;
 }
 
 .modalka {
