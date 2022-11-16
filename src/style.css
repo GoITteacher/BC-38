@@ -2,9 +2,8 @@ body{
     width: 94vw;
     height: 94vh;
     display: flex;
-    flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: flex-start;
     overflow-y:auto;
     padding: 20px;
     margin: 0;

@@ -2,8 +2,8 @@
 
 # TASK1
 
-- Создать форму регистрации
-- Добавить слушатели событий
-- Реализовать открытие модального окна при нажатии на кнопку Зарегистрироваться
-- Реализовать методы закрытия модального окна
-- Передавать в модальное окно Данные Пользователя
+- Create file helpers.js
+- Save User Data to LS
+- Load UserData from LS
+- Show history transaction
+- Calculate total user balance

@@ -10,73 +10,28 @@
     <title>EXAMPLE</title>
 </head>
 <body>
-  <a href="./delegations.html">Delegations</a>
-  <a href="./lodash.html">Delegations</a>
+
+  <form class="form box">
+    <input type="number" class="js-input form-control" name="input-value">
+    <div>
+      <button class="js-deposit form-control" name="deposit-btn">Deposit</button>
+      <button class="js-withdraw form-control" name="withdraw-btn">Withdraw</button>
+    </div>
+  </form>
   
-    <form id="formo4ka" class="js-register-form box" autocomplete="off">
-      <input id="js-input-size" type="range" min="1" max="6" />
-          
-        <div role="group">
-          <label>
-            UserName
-            <input class="form-control js-input-username" type="text" name="username" value="" data-max-length="3"/>
-          </label><br>
-          <label>
-            Почта
-            <input class="form-control" type="email" name="email" value=""/>
-          </label>
-          <br>
-          <label>
-            Пароль
-            <input class="form-control" name="password" type="password"/>
-          </label><br>
-          <label>
-            Биография
-            <textarea class="form-control" name="bio"></textarea>
-          </label>
-        </div>
-  
-        <br />
-        <div role="group" class="form-check">
-          <b>Тип подписки:</b><br>
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="subscription" value="free"/>
-            Free
-        </label><br>
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="subscription" value="test"/>
-            Basic
-        </label><br>
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="subscription" value="pro" />
-            Pro  
-        </label><br>
-        </div>
-
-        <br />
-        <div class="form-check">
-          <b>Рассылки:</b><br>
-          <label>
-            <input class="form-check-input" type="checkbox" name="spam1" value="spam1"/>
-            Spam for email
-          </label><br>
-          <label>
-            <input class="form-check-input" type="checkbox" name="spam2" value="spam2"/>
-            Spam for mobile
-          </label><br>
-          <label>
-            <input class="form-check-input" type="checkbox" name="spam3" value="spam3" />
-            Spam for telegram
-          </label><br>
-          <input type="color" id="js-input-color">
-        </div>
-        <br />
-        <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
-      </form>
-
-
-
-
-    <script src="scripts/script1.js"></script>
+    <div class="box" style="width: 200px;">
+      <div>
+        Balance: <span class="js-balance">0</span>
+      </div>
+      <div>
+        History:
+        <ul class="js-history">
+          <li>+100</li>
+          <li>-3100</li>
+        </ul>
+      </div>
+    </div>
+    
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
