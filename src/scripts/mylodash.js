@@ -1,3 +1,6 @@
+import _ from 'lodash';
+import simpleLightbox from 'simple-lightbox';
+
 const refs = {
   formElem: document.querySelector('.js-form'),
   inputEl: document.querySelector('.js-input'),

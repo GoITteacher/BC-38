@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/GoITteacher/js-template-practic#readme",
   "dependencies": {
-    "parcel": "^2.8.0"
+    "lodash": "^4.17.21",
+    "parcel": "^2.8.0",
+    "simple-lightbox": "^2.1.0"
   }
 }
