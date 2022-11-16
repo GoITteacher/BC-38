@@ -4,7 +4,7 @@ export class Bank {
   constructor() {}
 
   deposit(value) {
-    this.balance += value;
+    this.balance += +value;
 
     const transaction = {
       type: 'deposit',
@@ -15,7 +15,7 @@ export class Bank {
     this.historyTransaction.push(transaction);
   }
   withdraw(value) {
-    this.balance -= value;
+    this.balance -= +value;
 
     const transaction = {
       type: 'withdraw',

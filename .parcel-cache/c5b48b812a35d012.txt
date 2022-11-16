@@ -1,8 +1,8 @@
-5284
+5292
 70F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\differenceBy.js133129891923864668 0
 69F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\detect-libc\package.json133129891777857135 0
 65F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\initial.js133129891926861752 0
-44F:\2 PROJECT\Codding\GoIT\BC-38\package.json133129900861092867 0
+44F:\2 PROJECT\Codding\GoIT\BC-38\package.json133130744295268548 0
 88F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\markdown-ansi\test\markdown-ansi.js133129891803763339 0
 71F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\yaml\browser\dist\index.js133129891815597371 0
 79F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\core\test\fixtures\plugins133129891898126099 1
@@ -33,7 +33,7 @@
 54F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@mischnic133129891758072876 1
 65F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\type-fest\index.d.ts133129891852203518 0
 95F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\dom-serializer\node_modules\entities\lib\decode.js133129891793734876 0
-36F:\2 PROJECT\Codding\GoIT\BC-38\dist133129916390875594 1
+36F:\2 PROJECT\Codding\GoIT\BC-38\dist133130780820622683 1
 67F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\isElement.js133129891944671562 0
 87F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\utility-types\dist\aliases-and-guards.d.ts133129891840688624 0
 91F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\features\addeventlistener.js133129891821820730 0
@@ -49,14 +49,6 @@
 45F:\2 PROJECT\Codding\GoIT\BC-38\src\modal.css133129003234607510 0
 67F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\term-size\package.json133129891820803447 0
 44F:\2 PROJECT\Codding\GoIT\BC-38\node_modules133130722231821977 1
-73F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\utils\src\urlJoin.js133129891897866801 0
-81F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@jridgewell\gen-mapping\package.json133129891795679866 0
-65F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\pullAll.js133129891961984739 0
-76F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\source-map-support\package.json133129891810794935 0
-69F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\intersectionBy.js133129891927480097 0
-71F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\watcher\src\shared133129891858142472 1
-66F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\get-port\package.json133129891777129092 0
-56F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\is-arrayish133129891816056156 1
 146F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\side-effects-package-redirect-up\foo\real-bar.js133129891896879426 0
 76F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\regions\IN.js133129891925081415 0
 48F:\2 PROJECT\Codding\GoIT\BC-38\.prettierrc.json133110309176294386 0
@@ -72,7 +64,7 @@
 66F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\detect-libc\README.md133129891792129164 0
 96F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_load.c133129891882524299 0
 86F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\source-map\dist\SourceMap.js.flow133129891789775463 0
-41F:\2 PROJECT\Codding\GoIT\BC-38\README.md133125556701730081 0
+41F:\2 PROJECT\Codding\GoIT\BC-38\README.md133130729311234546 0
 54F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\callsites133129891803274651 1
 73F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\csso\lib\clean\WhiteSpace.js133129891889353970 0
 56F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\htmlparser2133129891833707085 1
@@ -80,7 +72,7 @@
 123F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\node-resolver-core\test\fixture\packages\source-alias-glob\src\test.js133129891898794304 0
 71F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\htmlparser2\lib\index.d.ts133129891839511761 0
 68F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\node-releases\README.md133129891811807320 0
-35F:\2 PROJECT\Codding\GoIT\BC-38\src133130722051085798 1
+35F:\2 PROJECT\Codding\GoIT\BC-38\src133130758377252368 1
 53F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\csso\lib133129891884623759 1
 89F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\features\css-namespaces.js133129891918296093 0
 85F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lmdb\dependencies\lmdb-data-v1\libraries133129891779637476 1
@@ -100,22 +92,31 @@
 62F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\term-size\license133129891793919475 0
 74F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\mdn-data\css\definitions.json133129891830425874 0
 84F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\features\maxlength.js133129891951693040 0
+77F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\core\test\Parcel.test.js133129891904898192 0
+83F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\type-fest\source\conditional-keys.d.ts133129891827889608 0
+80F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@jridgewell\trace-mapping\README.md133129891820743614 0
+58F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\msgpackr\dist133129891869462386 1
+83F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\dom-serializer\lib\esm\foreignNames.js133129891785516841 0
+76F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\regions\PK.js133129891961291497 0
+90F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\features\rest-parameters.js133129891962184206 0
+64F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\deburr.js133129891923465735 0
+46F:\2 PROJECT\Codding\GoIT\BC-38\src\helpers.js133130763546685229 0
 68F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\startsWith.js133129891964188847 0
 63F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\iteratee.js133129891956505568 0
 62F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\fs-search133129891888715678 1
 64F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\number.js133129891960638157 0
-46F:\2 PROJECT\Codding\GoIT\BC-38\src\index.html133130722174042218 0
+46F:\2 PROJECT\Codding\GoIT\BC-38\src\index.html133130779218876881 0
 56F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@jridgewell133129891758451851 1
 75F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\cosmiconfig\dist\Explorer.d.ts133129891870409851 0
 54F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp133129891967170874 1
 58F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\dotenv-expand133129891808771164 1
 62F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\isArray.js133129891935746053 0
 74F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\utility-types\dist\index.d.ts133129891857603908 0
-44F:\2 PROJECT\Codding\GoIT\BC-38\src\index.js133130721966232568 0
+44F:\2 PROJECT\Codding\GoIT\BC-38\src\index.js133130780819385985 0
 70F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\_replaceHolders.js133129891919313370 0
 51F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@lezer133129891758451851 1
 63F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\svgo\lib\parser.js133129891874027830 0
-45F:\2 PROJECT\Codding\GoIT\BC-38\src\style.css133129112678684473 0
+45F:\2 PROJECT\Codding\GoIT\BC-38\src\style.css133130728886151299 0
 74F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@swc\helpers\lib\_decorate.js133129891876610301 0
 49F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\.bin133129891967839087 1
 68F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lmdb\dist\index.cjs.map133129891911359556 0
@@ -353,6 +354,14 @@
 65F:\2 PROJECT\Codding\GoIT\BC-38\dist\delegations.ef55e004.css.map133129914167641516 0
 96F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_copy.1133129891858621190 0
 60F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\yaml\index.d.ts133129891892386369 0
+73F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\utils\src\urlJoin.js133129891897866801 0
+81F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@jridgewell\gen-mapping\package.json133129891795679866 0
+65F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\pullAll.js133129891961984739 0
+76F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\source-map-support\package.json133129891810794935 0
+69F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\intersectionBy.js133129891927480097 0
+71F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\watcher\src\shared133129891858142472 1
+66F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\get-port\package.json133129891777129092 0
+56F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\is-arrayish133129891816056156 1
 52F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\is-json133129891812640172 1
 93F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@swc\helpers\src\_class_apply_descriptor_set.mjs133129891901407322 0
 85F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@swc\helpers\lib\_non_iterable_spread.js133129891892531067 0
@@ -1033,13 +1042,6 @@
 84F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\features\web-share.js133129891965644955 0
 79F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\css-tree\lib\syntax\scope\index.js133129891897597510 0
 72F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\type-fest\source\basic.d.ts133129891816115987 0
-77F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\core\test\Parcel.test.js133129891904898192 0
-83F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\type-fest\source\conditional-keys.d.ts133129891827889608 0
-80F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@jridgewell\trace-mapping\README.md133129891820743614 0
-58F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\msgpackr\dist133129891869462386 1
-83F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\dom-serializer\lib\esm\foreignNames.js133129891785516841 0
-76F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\regions\PK.js133129891961291497 0
-90F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\features\rest-parameters.js133129891962184206 0
 60F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\chunk.js133129891921555747 0
 64F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\toInteger.js133129891965186180 0
 83F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\type-fest\source\conditional-pick.d.ts133129891829812367 0
@@ -1062,6 +1064,7 @@
 74F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\type-fest\source\mutable.d.ts133129891861199388 0
 76F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\regions\ES.js133129891921296441 0
 79F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\cosmiconfig\dist\Explorer.d.ts.map133129891838065441 0
+58F:\2 PROJECT\Codding\GoIT\BC-38\dist\index.975ef6c8.js.map133130780820343433 0
 73F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\type-fest\source\opaque.d.ts133129891861927433 0
 65F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\isError.js133129891950715402 0
 93F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@swc\helpers\lib\_possible_constructor_return.js133129891894675322 0
@@ -1716,6 +1719,7 @@
 66F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\posthtml\package.json133129891798736774 0
 63F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\posthtml\readme.md133129891806985941 0
 64F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\_baseKeys.js133129891896590205 0
+65F:\2 PROJECT\Codding\GoIT\BC-38\dist\index.975ef6c8.js.map.5156.k133130724815118782 0
 59F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\posthtml\types133129891810844799 1
 68F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\browserslist\index.d.ts133129891829652794 0
 70F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\matchesProperty.js133129891959476181 0
@@ -1923,6 +1927,7 @@
 72F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\node-gyp-build\package.json133129891810346130 0
 89F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@swc\helpers\lib\_tagged_template_literal.js133129891896719859 0
 62F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\dist133129891963580476 1
+59F:\2 PROJECT\Codding\GoIT\BC-38\dist\index.ef55e004.css.map133130780820343433 0
 69F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\node-gyp-build\README.md133129891815367993 0
 72F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\node-addon-api\CHANGELOG.md133129891858501516 0
 84F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\utils\test\prettifyTime.test.js133129891892959904 0
@@ -2685,8 +2690,6 @@
 79F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\htmlnano\docs\docusaurus.config.js133129891827081761 0
 86F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\features\user-timing.js133129891965146285 0
 79F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\_matchesStrictComparable.js133129891918984258 0
-76F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lightningcss\node\index.js.flow133129891782484954 0
-76F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\regions\SZ.js133129891964079147 0
 69F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\_memoizeCapped.js133129891919004197 0
 65F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\_mergeData.js133129891919014170 0
 63F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\_metaMap.js133129891919034117 0
@@ -2812,7 +2815,6 @@
 79F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\core\lib\Transformation.js133129891911643878 0
 108F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\@scope\pkg133129891899412651 1
 66F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\debounce.js133129891923425847 0
-64F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\deburr.js133129891923465735 0
 70F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\transformer-image133129891820963032 1
 79F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\namer-default\package.json133129891801978112 0
 67F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lodash\fp\startCase.js133129891964148947 0
@@ -3212,6 +3214,8 @@
 62F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\entities\lib\maps133129891837786187 1
 87F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lightningcss\node\browserslistToTargets.js133129891793216256 0
 73F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lightningcss\node\index.d.ts133129891821661160 0
+76F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lightningcss\node\index.js.flow133129891782484954 0
+76F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\caniuse-lite\data\regions\SZ.js133129891964079147 0
 72F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lightningcss\node\index.mjs133129891815647241 0
 75F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\lightningcss\node\targets.d.ts133129891824987353 0
 55F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\json5\dist133129891852213488 1
@@ -4900,6 +4904,7 @@
 126F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\bar.js133129891831133980 0
 130F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\browser.js133129891839272406 0
 126F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\foo.js133129891865368247 0
+59F:\2 PROJECT\Codding\GoIT\BC-38\dist\index.2cdaf7bc.css.map133130780820343433 0
 129F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\nested.js133129891894645412 0
 130F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\subfolder1133129891898096176 1
 141F:\2 PROJECT\Codding\GoIT\BC-38\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\subfolder1\subfolder2133129891898106152 1
@@ -5281,5 +5286,8 @@
 65F:\2 PROJECT\Codding\GoIT\BC-38\dist\delegations.2cdaf7bc.css.map133129914167920765 0
 60F:\2 PROJECT\Codding\GoIT\BC-38\dist\delegations.bd0dba34.js133129916390815747 0
 53F:\2 PROJECT\Codding\GoIT\BC-38\dist\delegations.html133129910448177117 0
-47F:\2 PROJECT\Codding\GoIT\BC-38\dist\index.html133129914167402157 0
+55F:\2 PROJECT\Codding\GoIT\BC-38\dist\index.2cdaf7bc.css133130780820303548 0
+54F:\2 PROJECT\Codding\GoIT\BC-38\dist\index.975ef6c8.js133130780820303548 0
+55F:\2 PROJECT\Codding\GoIT\BC-38\dist\index.ef55e004.css133130780820233724 0
+47F:\2 PROJECT\Codding\GoIT\BC-38\dist\index.html133130780820612715 0
 59F:\2 PROJECT\Codding\GoIT\BC-38\dist\lodash.2b5d7391.js.map133129914167641516 0

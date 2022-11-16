@@ -11,27 +11,45 @@
 </head>
 <body>
 
-  <form class="form box">
-    <input type="number" class="js-input form-control" name="input-value">
-    <div>
-      <button class="js-deposit form-control" name="deposit-btn">Deposit</button>
-      <button class="js-withdraw form-control" name="withdraw-btn">Withdraw</button>
-    </div>
-  </form>
+  <div class="js-form-container fb fb-h">
+    <form class="form box js-form1" data-index="1">
+      <input class="js-input form-control" name="input-value">
+      <div>
+        <button class="js-deposit form-control" name="deposit-btn">Deposit</button>
+        <button class="js-withdraw form-control" name="withdraw-btn">Withdraw</button>
+      </div>
   
-    <div class="box" style="width: 200px;">
-      <div>
-        Balance: <span class="js-balance">0</span>
+      <div class="box" style="width: 200px;">
+        <div>
+          Balance: <span class="js-balance" name="balance">0</span>
+        </div>
+        <div>
+          History:
+          <ul class="js-history" name="history">
+          </ul>
+        </div>
       </div>
+    </form>
+  
+    <form class="form box js-form2" data-index="2">
+      <input class="js-input form-control" name="input-value">
       <div>
-        History:
-        <ul class="js-history">
-          <li>+100</li>
-          <li>-3100</li>
-        </ul>
+        <button class="js-deposit form-control" name="deposit-btn">Deposit</button>
+        <button class="js-withdraw form-control" name="withdraw-btn">Withdraw</button>
       </div>
-    </div>
-    
+  
+      <div class="box" style="width: 200px;">
+        <div>
+          Balance: <span class="js-balance" name="balance">0</span>
+        </div>
+        <div>
+          History:
+          <ul class="js-history" name="history">
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
     <script type="module" src="./index.js"></script>
 </body>
 </html>

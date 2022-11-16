@@ -124,3 +124,8 @@ li{
     -webkit-filter: blur(0);
     filter: blur(0);
 }
+
+.form-control{
+    margin-top:10px;
+    margin-bottom:10px;
+}
