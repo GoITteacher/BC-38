@@ -10,8 +10,7 @@ const refs = {
 };
 
 // =====================
-refs.formElem1.addEventListener('submit', onFormSubmit);
-refs.formElem2.addEventListener('submit', onFormSubmit);
+
 function onFormSubmit(evt) {
   evt.preventDefault();
   evt.target.reset();
