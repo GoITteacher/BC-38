@@ -34,3 +34,16 @@ refs.formElem3.addEventListener('submit', e => {
 refs.formElem3.addEventListener('input', e => {
   saveToLS(e.target.name, e.target.value);
 });
+
+refs.formContainer.addEventListener('input', () => {
+  const formData = new FormData(e.target);
+  const objData = {};
+  for (let [key, value] of formData) {
+    objData[key] = value;
+  }
+
+  const form = e.target.closest('form');
+
+  console.log(form);
+  saveToLS('');
+});
