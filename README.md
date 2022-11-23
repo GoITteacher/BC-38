@@ -1,217 +1,53 @@
-# Модуль 1. Занятие 1. Переменные, типы и операторы
-
-## Example 1 - Математические операторы
-
-Выведи на экран общее количество яблок и винограда. Разницу яблок и винограда.
-
-```js
-const apples = 47;
-const grapes = 135;
-const total = ;
-console.log(total)
-const diff = ;
-console.log(diff)
-```
-
-## Example 2 - Комбинированные операторы
-
-Замени выражение переопределения комбинированным оператором `+=`.
-
-```js
-let students = 100;
-students = students + 50;
-console.log(students);
-```
-
-## Example 3 - Приоритет операторов
-
-Разбери приоритет операторов в инструкции присвоения значения переменной
-`result`.
-
-```js
-const result = 108 + 223 - 2 * 5;
-console.log(result);
-```
-
-## Example 4 - Класс Math
-
-Напиши скрипт, который выводит в консоль округленные вверх/вниз и т.д. значения
-переменной `value`. Используй методы `Math.floor()`, `Math.ceil()` и
-`Math.round()`. Проверь что будет в консоли при значениях `27.3` и `27.9`.
-
-```js
-const value = 27.5;
-```
-
-## Example 5 - Шаблонные строки
-
-Составь фразу с помощью шаблонных строк `A has B bots in stock`, где A, B -
-переменные вставленные в строку.
-
-```js
-const companyName = 'Cyberdyne Systems';
-const repairBots = 150;
-const defenceBots = 50;
-const message = ``;
-console.log(message); // "Cyberdyne Systems has 200 bots in stock"
-```
-
-## Example 6 - Методы строк и чейнинг
-
-Напиши скрипт который рассчитывает индекс массы тела человека. Для этого
-необходимо разделить вес в киллограммах на квадрат высоты человека в метрах.
-
-Вес и высота хранятся в переменных `weight` и `height`, но не как числа, а в
-виде строк (специально для задачи). Нецелые числа могут быть заданы в виде
-`24.7` или `24,7`, то есть в качестве разделителя дробной части может быть
-запятая.
-
-Индекс массиы тела необходимо округлить до одной цифры после запятой;
-
-```js
-let weight = '88,3';
-let height = '1.75';
-
-const bmi = ;
-console.log(bmi); // 28.8
-```
-
-## Example 7 - Операторы сравнения и приведение типов
-
-Каким будет результат выражений?
-
-```js
-console.log(5 > 4);
-
-console.log(10 >= '7');
-
-console.log('2' > '12');
-
-console.log('2' < '12');
-
-console.log('4' == 4);
-
-console.log('6' === 6);
-
-console.log('false' === false);
-
-console.log(1 == true);
-
-console.log(1 === true);
-
-console.log('0' == false);
-
-console.log('0' === false);
-
-console.log('Papaya' < 'papaya');
-
-console.log('Papaya' === 'papaya');
-
-console.log(undefined == null);
-
-console.log(undefined === null);
-```
-
-## Example 8 - Логические операторы
-
-Каким будет результат выражений?
-
-```js
-console.log(true && 3);
-
-console.log(false && 3);
-
-console.log(true && 4 && 'kiwi');
-
-console.log(true && 0 && 'kiwi');
-
-console.log(true || 3);
-
-console.log(true || 3 || 4);
-
-console.log(true || false || 7);
-
-console.log(null || 2 || undefined);
-
-console.log((1 && null && 2) > 0);
-
-console.log(null || (2 && 3) || 4);
-```
-
-```js
-console.log(1 && 5);
-console.log(5 && 1);
-console.log(0 && 2);
-console.log(2 && 0);
-console.log('' && 'Mango');
-console.log('Mango' && '');
-console.log('Mango' && 'Poly');
-console.log('Poly' && 'Mango');
-```
-
-```js
-console.log(true || false);
-console.log(false || true);
-console.log(true || true);
-
-console.log(3 || false);
-console.log(false || 3);
-console.log(3 || true);
-console.log(true || 3);
-```
-
-```js
-console.log(!true);
-console.log(!false);
-console.log(!3);
-console.log(!'Mango');
-console.log(!0);
-console.log(!'');
-
-const isOnline = true;
-const isNotOnline = !isOnline;
-```
-
-## Example 9 - Значение по умолчанию и оператор нулевого слияния
-
-Отрефактори код так, чтобы в переменную `value` присваивалось значение
-переменной `incomingValue`, если оно не равно `undefined` или `null`. В
-противном случае должно присваиваться значение `defaultValue`. Проверь работу
-скрипта для слепдующих значений переменной `incomingValue`: null, undefined, 0,
-false. Используй оператор `??` (nullish coalescing operator).
-
-```js
-const incomingValue = 5;
-const defaultValue = 10;
-const value = incomingValue || defaultValue;
-console.log(value);
-```
-
-## Example 10 - Опертор % и методы строк
-
-Напиши скрипт который переведёт значение `totalMinutes` (количество минут) в
-строку в формате часов и минут `HH:MM`.
-
-- 70 покажет 01:10
-- 450 покажет 07:30
-- 1441 покажет 24:01
-
-```js
-const totalMinutes = 70;
-
-const hours = Math.floor(totalMinutes / 60);
-const minutes = totalMinutes % 60;
-console.log(hours);
-console.log(minutes);
-
-const doubleDigitHours = String(hours).padStart(2, 0);
-const doubleDigitMinutes = String(minutes).padStart(2, 0);
-console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
-```
+## [Часть 1 (теория)](https://docs.google.com/presentation/d/1YK1DogtkPz0zTo313uAeuvvNh1vFfbStCD-g39jGd5M/edit?usp=sharing)
+
+- Архитектура клиент-сервер
+  - Протоколы передачи данных: HTTP и HTTPS
+  - REST API (backend)
+  - Публичные REST API
+- Допмат (видео):
+  - [The World Wide Web](https://youtu.be/guvsH5OFizE?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
+  - [How The Internet Works](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7)
+- Допмат:
+  - [Client-Server](https://habr.com/ru/post/495698/)
+  - [Введение в REST API — RESTful веб-сервисы](https://habr.com/ru/post/483202/)
+  - [REST простым языком](https://medium.com/@andr.ivas12/rest-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D0%BC-%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%BC-90a0bca0bc78)
+  - [OSI (если уж совсем скучно будет)](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_OSI)
+
+## Часть 2 (практика)
+
+- HTTP-запросы в браузере
+  - Fetch API
+  - Владка Network
+  - HTTP-методы
+  - Заголовки
+  - MIME-типы
+  - [Параметры запроса](https://pixabay.com/api/docs/)
+  - [Pixabay API](https://pixabay.com/api/docs/#api_search_images)
+- Документация REST API
+- Аутентификация
+  - [https://newsapi.org/](https://newsapi.org/)
+    key-c8747511a2c34730a83caaff4f3693e7
+  - [https://weatherstack.com/](https://weatherstack.com/)
+  - [https://pixabay.com/api/docs/](https://pixabay.com/api/docs/)
+- Библиотеки-обёртки
+- [Отмена HTTP-запроса с AbortController](https://davidwalsh.name/javascript-promise-tricks)
+
+## Часть 3
+
+- Cross-Origin Resource Sharing (CORS)
+  - [Статья на HABR](https://habr.com/ru/company/macloud/blog/553826/)
+  - [Статья на MDN](https://developer.mozilla.org/uk/docs/Web/HTTP/CORS)
+  - [https://pokeapi.co/](https://pokeapi.co/)
+  - [https://darksky.net/dev](https://darksky.net/dev)
+- Proxy
+  - Хранение API ключей и секретов
+  - [https://lpj-weather-service.herokuapp.com/](https://lpj-weather-service.herokuapp.com/)
 
 ---
 
-## CodeWars
+## Доп Мат
 
-- [Kata 1](https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097)
-- [Kata 2](https://www.codewars.com/kata/5748838ce2fab90b86001b1a)
+- [DNS](https://selectel.ru/blog/dns-server/)
+- [Презентация](https://drive.google.com/file/d/1KcDIQuyn2IBwESAjg96hH-nniozG3L3W/view?usp=sharing)
+- [Версии HTTP](https://developer.mozilla.org/ru/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP)
+- [SPECS](https://rapidapi.com/pgamerxdev/api/random-stuff-api/specs)

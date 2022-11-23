@@ -1,5 +1,5 @@
 {
-  "name": "js-template-practice",
+  "name": "js-example",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -9,13 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GoITteacher/js-template-practic.git"
+    "url": "git+https://github.com/GoITteacher/js-example.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GoITteacher/js-template-practic/issues"
+    "url": "https://github.com/GoITteacher/js-example/issues"
   },
-  "homepage": "https://github.com/GoITteacher/js-template-practic#readme"
+  "homepage": "https://github.com/GoITteacher/js-example#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "dependencies": {
+    "parcel-transformer-hbs": "^1.0.4"
+  }
 }
