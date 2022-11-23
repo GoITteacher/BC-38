@@ -1,15 +1,20 @@
-import { searchHero } from './modules/jsonplaceholder';
-import heroMarkup from '../templates/hero-card.hbs';
+import userCardTemplate from '../templates/user-card.hbs';
+import { getUsers } from './modules/randomUsersAPI';
+
 const refs = {
-  formElem: document.querySelector('.js-search-form'),
-  containerElem: document.querySelector('.js-card-container'),
+  formEl: document.querySelector('.js-search-form'),
+  cardContainer1: document.querySelector('.js-card-container'),
 };
 
-refs.formElem.addEventListener('submit', e => {
+refs.formEl.addEventListener('submit', e => {
   e.preventDefault();
-  const hero = e.target.elements.query.value;
-
-  searchHero(hero).then(value => {
-    refs.containerElem.innerHTML = heroMarkup(value);
+  getUsers().then(data => {
+    renderUsers(data);
   });
 });
+
+function renderUsers(users) {
+  const markup = userCardTemplate(users);
+  console.log(markup);
+  refs.cardContainer1.innerHTML = markup;
+}
