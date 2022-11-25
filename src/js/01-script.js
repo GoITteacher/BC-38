@@ -1,45 +1,61 @@
-import '../css/common.css';
-import { refs } from './modules/refs.js';
-import { getQuotes } from './modules/quotesAPI';
-import quotesTemplate from '../templates/quotes-card.hbs';
-import heroesTemplate from '../templates/hero-card.hbs';
-import { getHero } from './modules/heroesAPI';
+import { NewsApi } from './modules/newsApi';
+const form = document.querySelector('.js-search-form');
+const btnLoad = document.querySelector('.js-btn-load');
+const articleListElem = document.querySelector('.js-article-list');
 
-// =======================================================
-refs.form.addEventListener('submit', onSubmitHandler);
+let newsApi1 = new NewsApi();
 
-function onSubmitHandler(e) {
+form.addEventListener('submit', e => {
   e.preventDefault();
+  const query = e.target.elements.query.value.trim();
 
-  let dataPromise = getQuotes();
-  dataPromise.then(value => {
-    refs.cardContainer.innerHTML = quotesTemplate(value);
-  });
-}
-// =======================================================
+  if (query) {
+    newsApi1.currentPage = 1;
 
-refs.form1.addEventListener('submit', onSearchHero);
+    newsApi1.getNewsByAxios(query).then(data => {
+      clearElement(articleListElem);
+      renderArticles(data.articles);
+      btnLoad.disabled = false;
 
-function onSearchHero(e) {
-  e.preventDefault();
-
-  const heroName = refs.form1.elements.query.value;
-  getHero(heroName)
-    .then(resolve => resolve.json())
-    .then(hero => {
-      console.log(heroesTemplate(hero));
-      refs.cardContainer1.innerHTML = heroesTemplate(hero);
+      if (newsApi1.currentPage >= data.total_pages) {
+        btnLoad.disabled = true;
+      }
+      e.target.reset();
     });
+  } else {
+    console.log('Empty query');
+  }
+});
+
+btnLoad.addEventListener('click', e => {
+  newsApi1.currentPage++;
+  newsApi1.getNews().then(data => {
+    renderArticles(data.articles);
+
+    if (newsApi1.currentPage >= data.total_pages) {
+      btnLoad.disabled = true;
+    }
+  });
+});
+
+function clearElement(element) {
+  while (element.firstChild) {
+    element.removeChild(element.firstChild);
+  }
 }
-// =======================================================
-// =======================================================
-// =======================================================
-// =======================================================
-// =======================================================
-// =======================================================
-// =======================================================
-// =======================================================
-// =======================================================
-// =======================================================
-// =======================================================
-// =======================================================
+
+function renderArticles(articles) {
+  const markup = articles
+    .map((article, index, array) => {
+      return `
+    <li>
+    <h3>${article.title}</h3>
+    <p>${article.summary}</p>
+    <p>${article.author}</p>
+    </li>
+    `;
+    })
+    .join('');
+
+  articleListElem.insertAdjacentHTML('beforeend', markup);
+}
