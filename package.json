@@ -24,6 +24,7 @@
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
-    "parcel-transformer-hbs": "^1.0.4"
+    "file-saver": "^2.0.5",
+    "parcel-transformer-hbs": "^1.0.3"
   }
 }
