@@ -1,0 +1,13 @@
+<div class="country-info-list__item">
+    <img class="country-info-list__img" src="{{flags.png}}" alt="Flag of {{name.common}}">
+       <p class="country-info-list__title">{{name.common}}</p>
+        <p class="country-info-list__description"><b>Capital</b>:{{capital}}</p>
+        <p class="country-info-list__description"><b>Population</b>:{{population}}</p>
+    
+    <b>Languages</b>:
+    <ul class="country-info-list__description">
+        {{#each languages}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+</div>

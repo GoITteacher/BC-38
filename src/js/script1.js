@@ -1,15 +1,25 @@
-import { TranslateAPI } from './modules/translateAPI';
-const translateAPI = new TranslateAPI();
+import { Countries } from './modules/countriesAPI';
+import countryTemplate from '../templates/country.hbs';
 
 const refs = {
-  formEl: document.querySelector('.js-form'),
-  resultEl: document.querySelector('.js-result'),
+  form: document.querySelector('.js-form'),
+  resContainer: document.querySelector('.js-container'),
 };
 
-refs.formEl.addEventListener('submit', e => {
+refs.form.addEventListener('submit', e => {
   e.preventDefault();
-  const formValue = e.target.elements.translate.value;
-  translateAPI.translate(formValue).then(data => {
-    refs.resultEl.innerHTML = data.translatedText;
+  const findCountry = e.target.elements['country-name'].value;
+  Countries.findCountries(findCountry).then(value => {
+    renderCountries(value);
   });
 });
+
+function renderCountries(arrCountries) {
+  if (arrCountries.length === 1) {
+    const country = arrCountries[0];
+    console.log(country.languages);
+    const markup = countryTemplate(country);
+
+    refs.resContainer.innerHTML = markup;
+  }
+}
