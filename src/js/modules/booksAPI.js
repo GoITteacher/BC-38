@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 const axiosV2 = axios.create({
-  baseURL: 'http://localhost:4040',
+  baseURL: 'http://localhost:3000',
 });
 
-const BASE_URL = 'http://localhost:4040';
+const BASE_URL = 'http://localhost:3000';
 
 export class BooksAPI {
   getAllBooks() {
