@@ -6,8 +6,14 @@ const axios2 = axios.create({
 });
 
 export class BooksAPI {
-  static getBooks() {
-    return axios2.get(`/books`);
+  static async getBooks() {
+    try {
+      const data = await axios2.get(`/books`);
+      return data;
+    } catch {
+      console.log(err);
+      return [];
+    }
   }
 
   static createBook(book) {

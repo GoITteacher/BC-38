@@ -4,7 +4,7 @@ export class BooksAPI {
     return fetch(`${BASE_URL}/books`).then(res => res.json());
   }
 
-  static createBook(book) {
+  static async createBook(book) {
     const options = {
       method: 'POST',
       headers: {
@@ -13,10 +13,16 @@ export class BooksAPI {
       body: JSON.stringify(book),
     };
 
-    return fetch(`${BASE_URL}/books`, options).then(res => res.json());
+    try {
+      const res = await fetch(`${BASE_URL}/books`, options);
+      return res.json();
+    } catch {
+      console.log('Error');
+      return 'Error';
+    }
   }
 
-  static updateBook(book) {
+  static async updateBook(book) {
     const { id } = book;
     const options = {
       method: 'PATCH',
@@ -25,11 +31,18 @@ export class BooksAPI {
       },
       body: JSON.stringify(book),
     };
+    try {
+      const res = await fetch(`${BASE_URL}/books/${id}`, options);
 
-    return fetch(`${BASE_URL}/books/${id}`, options).then(res => res.json());
+      if (!res.ok) throw new Error('Error');
+
+      return res.json();
+    } catch {
+      console.log('Error');
+    }
   }
 
-  static resetBook(book) {
+  static async resetBook(book, name, id, login) {
     const { id } = book;
     const options = {
       method: 'PUT',
@@ -39,7 +52,8 @@ export class BooksAPI {
       body: JSON.stringify(book),
     };
 
-    return fetch(`${BASE_URL}/books/${id}`, options).then(res => res.json());
+    const res = await fetch(`${BASE_URL}/books/${id}`, options);
+    return res.json();
   }
 
   static deleteBook(id) {
