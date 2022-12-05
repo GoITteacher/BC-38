@@ -21,8 +21,9 @@
 - у папці utils:
   1. створити файл \_variables.scss і оголосити там необхідні змінні
   1. сторити файли placeholders.scss and \_mixins.scss якщо вони потрібні
-- У файлі \_common.scss створити мінімальний сброс
-- У файлі \_container.scss оголосити контейнер під усі екрани (мобілка, таблетка, десктоп)
+- у папці base:
+  1. У файлі \_common.scss створити мінімальний сброс
+  1. У файлі \_container.scss оголосити контейнер під усі екрани (мобілка, таблетка, десктоп)
 - Підключити усі scss файли до файлу main.scss через дерективу @import
 
 ## [#](https://docs.google.com/document/d/1PvwscZhKhXM_ow0_RMJEWJ2xgtsEb65lLeGG3mEzFMs/edit) Trello
