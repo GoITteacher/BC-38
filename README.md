@@ -1,56 +1,52 @@
-# Commands
+# Project JS
 
-## [GIT](https://learngitbranching.js.org/?locale=uk) Commands
+## Repo
 
-1. `git remote -v` - проверить к какjму репозиторию привязан проэкт
-1. `git remote set-url origin ........` - change url repository
-1. `git clone` - копіює репозиторій(папку з файлами) на компютер
-1. `git branch` "branchName" - створює гілку з назвою "branchName"
-1. `git push` origin -d ИмяВетки удолить ветку на удоленном репозитории
-1. `git branch` -d "name" удоляет не нужную ветку
-1. `git checkout` "branchName" - переходить на гілку з назвою "branchName"
-1. `git checkout` -b "branchName" - створюємо гілку з назвою "branchName" і
-   переходимо на неї
-1. `git add .` - зберігаємо
-1. `git commit -m "commit message"` - підписуємо збереженні зміни в файлах
-1. `git push` - відправляємо зміни на сайт github
-1. `git push --set-upstream origin` Назва ветки пушить новую ветку на гит
-1. `git pull` - отримуємо останні зміни з сайту github
-1. `git status` - показуємо статус проекту
-1. `git branch` - показуємо список гілок в проекті
-1. `git branch -r` - показуємо список гілок на сайті github
-1. `git branch -a` - показуємо список гілок на компютері та на сайті github
-1. `git fetch` обновляет удоленный репозиторий
-1. `git fetch` - отримуємо зміни з сайту github
-1. `git stash` - зберігаємо не збережені зміни в файлах і кладемо їх в буфер
-   обміну
-1. `git stash apply` - вставляємо збережені зміни з буфера обміну
-1. `git merge "banchName"` - зливаємо гілку з назвою "branchName" в поточну
-   гілку
-1. `git merge --abort` - відміняємо зливання гілок
-1. `git branch -d branchName` - видаляє гілку локально з проекту
-1. `git push origin --delete name` - видаляє гілку з сайту github
-1. `git diff` - показує відрізки рядків між двома версіями файлу (між двома
-   комітами)
-1. `git log` - показує історію комітів
+- Create Project
+- Invite Colobarators
+- Create branch dev
+- Change Settings
+  1. Go to settings
+  1. go to branches
+  1. Add Rule
+  1. For main selected all
+  1. For dev selected first 6 items
 
----
+## Project
 
-## Terminal Commands
+- Download [Parcel](https://github.com/goitacademy/parcel-project-template)
+- У папці partials створити під кожну секцію окремий HTML файл і підключити ці файли у головний файл index.hml (`<include src="./partials/example.html"></include>`)
+- Підключити шрифти у головний файл index.hml
+- У папці SASS сторити папку layout. У папці layout сторити під кожну секцію окремий scss файл
+- у папці utils:
+  1. створити файл \_variables.scss і оголосити там необхідні змінні
+  1. сторити файли placeholders.scss and \_mixins.scss якщо вони потрібні
+- У файлі \_common.scss створити мінімальний сброс
+- У файлі \_container.scss оголосити контейнер під усі екрани (мобілка, таблетка, десктоп)
+- Підключити усі scss файли до файлу main.scss через дерективу @import
 
-- `cd gitTutorial - переходимо в папку gitTutorial `
-- `Для того щоб вийти з режиму перегляду комітів використовуйте клавішу q (стосується команди №20 і №21)`
-- `(cd имя) папки`
-- `(cd ..) на напку в низ`
-- `(mkdir название) - создать папку`
-- `(pwd) показыват в какой папке находишься`
-- `(ls)`
-- `(ls -l) показывает какие файлы находяться в папке`
-- `(clear) очистить консоль`
-- `(mv имя имя) переименоваинем/перемещение`
-- `(rm имя) удоление файла`
-- `(rmdir имя) удоление папки`
-- `(touch имя ) создать файла`
-- `(mkdir имя ) создание папки`
+## [#](https://docs.google.com/document/d/1PvwscZhKhXM_ow0_RMJEWJ2xgtsEb65lLeGG3mEzFMs/edit) Trello
+
+- Потрібно додати колонки:
+
+  - Materials
+  - To do
+  - In progress
+  - Code review
+  - Done
+
+- Для розробників
+
+  1. У колонці Materials необхідно розмістити картки з дод. інформацією для роботи над проєктом: макет, ТЗ, інструкція до проєкту даного рівня (також сюди можна винести різні корисні посилання на навчальні відео тощо)
+  1. У колонці To do потрібно створити картки з описом задач
+  1. У колонці In progress розробник перетягує картку із завданнями, яку збирається реалізовувати.
+     ВАЖЛИВО! У розробника в колонці In progress може бути відкрита лише одна картка, із завданням, яке він виконує. Друга картка може з'явитися в цій колонці у тому випадку, коли тімлід повернув розробнику правки з попереднього завдання, у момент, коли той уже займався реалізацією наступного завдання.
+  1. У колонці Code review знаходяться картки із завданнями, які розробник відправив тімліду на перевірку в пул-реквесті.
+     ВАЖЛИВО! Тільки тімлід може перемістити картку в In progress із зауваженнями для доопрацювання, якщо є що допрацювати або Done, якщо завдання виконане без зауважень.
 
 ---
+
+## Посилання
+
+- [FIGMA](<https://www.figma.com/file/IOrJziFAjQD8Xb5V1fx0ib/Filmoteka-(Copy)-(Copy)?node-id=0%3A1>)
+- [TЗ](https://docs.google.com/spreadsheets/d/1Z26Jc5WlgcoD8r_Xci6R5vcCHtKFfESoJFhZQ2eh77E/edit#gid=0)
