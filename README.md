@@ -48,5 +48,5 @@
 
 ## Посилання
 
-- [FIGMA](<https://www.figma.com/file/IOrJziFAjQD8Xb5V1fx0ib/Filmoteka-(Copy)-(Copy)?node-id=0%3A1>)
-- [TЗ](https://docs.google.com/spreadsheets/d/1Z26Jc5WlgcoD8r_Xci6R5vcCHtKFfESoJFhZQ2eh77E/edit#gid=0)
+- [FIGMA](https://www.figma.com/file/4uXNyEnWgwE6HfAB8i52HT/Cocktails?node-id=0%3A1)
+- [TЗ](https://docs.google.com/spreadsheets/d/1F5yEEwP7VvIVLlXqBPw9TFtvF7coBnWf2qpEKiWDRMo/edit#gid=0)
