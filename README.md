@@ -49,5 +49,5 @@
 
 ## Посилання
 
-- [FIGMA](https://www.figma.com/file/4uXNyEnWgwE6HfAB8i52HT/Cocktails?node-id=0%3A1)
+- [FIGMA](https://www.figma.com/file/efipxuF66Yy3gPn7UPbQPr/Cocktails?node-id=3319%3A1699)
 - [TЗ](https://docs.google.com/spreadsheets/d/1F5yEEwP7VvIVLlXqBPw9TFtvF7coBnWf2qpEKiWDRMo/edit#gid=0)
