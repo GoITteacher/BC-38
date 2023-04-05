@@ -197,154 +197,180 @@ for (let key of Object.keys(user)) {
 - отримати список користувачів у яких баланс більший за N
 */
 
-const bank = {
-  users: [],
-  account: [],
+// const bank = {
+//   users: [],
+//   account: [],
 
-  addUser(login, password) {
-    let user = {
-      userId: randomID(),
-      login,
-      password,
-    };
+//   addUser(login, password) {
+//     let user = {
+//       userId: randomID(),
+//       login,
+//       password,
+//     };
 
-    this.users.push(user);
+//     this.users.push(user);
 
-    this.createAccount(user.userId);
-  },
+//     this.createAccount(user.userId);
+//   },
 
-  deleteUser(id) {
-    for (let i = 0; i < this.users.length; i++) {
-      if (this.users[i].userId === id) {
-        this.users.splice(i, 1);
-        this.deleteAccountForUser(id);
-        return;
-      }
-    }
+//   deleteUser(id) {
+//     for (let i = 0; i < this.users.length; i++) {
+//       if (this.users[i].userId === id) {
+//         this.users.splice(i, 1);
+//         this.deleteAccountForUser(id);
+//         return;
+//       }
+//     }
 
-    console.log('User with this id not found');
-  },
+//     console.log('User with this id not found');
+//   },
 
-  createAccount(id) {
-    const account = {
-      userId: id,
-      accountId: randomID(),
-      balance: 0,
-    };
+//   createAccount(id) {
+//     const account = {
+//       userId: id,
+//       accountId: randomID(),
+//       balance: 0,
+//     };
 
-    this.account.push(account);
-  },
+//     this.account.push(account);
+//   },
 
-  deleteAccount(id) {
-    for (let i = 0; i < this.account.length; i++) {
-      if (this.account[i].accountId === id) {
-        this.account.splice(i, 1);
-        return;
-      }
-    }
+//   deleteAccount(id) {
+//     for (let i = 0; i < this.account.length; i++) {
+//       if (this.account[i].accountId === id) {
+//         this.account.splice(i, 1);
+//         return;
+//       }
+//     }
 
-    console.log('User with this id not found');
-  },
+//     console.log('User with this id not found');
+//   },
 
-  deleteAccountForUser(id) {
-    const filterAccount = [];
-    for (let i = 0; i < this.account.length; i++) {
-      if (this.account[i].userId !== id) {
-        filterAccount.push(this.users[i]);
-      }
-    }
-    this.account = filterAccount;
-  },
+//   deleteAccountForUser(id) {
+//     const filterAccount = [];
+//     for (let i = 0; i < this.account.length; i++) {
+//       if (this.account[i].userId !== id) {
+//         filterAccount.push(this.users[i]);
+//       }
+//     }
+//     this.account = filterAccount;
+//   },
 
-  deposit(amount, id) {
-    for (let i = 0; i < this.account.length; i++) {
-      if (this.account[i].accountId === id) {
-        if (amount > 0) {
-          this.account[i].balance += amount;
-        } else {
-          console.log('Deposit must be a positive value');
-        }
-        return;
-      }
-    }
-  },
+//   deposit(amount, id) {
+//     for (let i = 0; i < this.account.length; i++) {
+//       if (this.account[i].accountId === id) {
+//         if (amount > 0) {
+//           this.account[i].balance += amount;
+//         } else {
+//           console.log('Deposit must be a positive value');
+//         }
+//         return;
+//       }
+//     }
+//   },
 
-  withdraw(amount, id) {
-    for (let i = 0; i < this.account.length; i++) {
-      if (this.account[i].accountId === id) {
-        if (amount <= this.account[i].balance && amount > 0) {
-          this.account[i].balance -= amount;
-        } else {
-          console.log('Withdraw must be less or equal to balance');
-        }
-        return;
-      }
-    }
-  },
+//   withdraw(amount, id) {
+//     for (let i = 0; i < this.account.length; i++) {
+//       if (this.account[i].accountId === id) {
+//         if (amount <= this.account[i].balance && amount > 0) {
+//           this.account[i].balance -= amount;
+//         } else {
+//           console.log('Withdraw must be less or equal to balance');
+//         }
+//         return;
+//       }
+//     }
+//   },
 
-  getBalance(id) {
-    for (let account of this.account) {
-      if (account.accountId === id) {
-        return account.balance;
-      }
-    }
-  },
+//   getBalance(id) {
+//     for (let account of this.account) {
+//       if (account.accountId === id) {
+//         return account.balance;
+//       }
+//     }
+//   },
 
-  getTotalBalance(userId) {
-    let sum = 0;
-    for (let account of this.account) {
-      if (account.userId === userId) {
-        sum += account.balance;
-      }
-    }
-    return sum;
-  },
+//   getTotalBalance(userId) {
+//     let sum = 0;
+//     for (let account of this.account) {
+//       if (account.userId === userId) {
+//         sum += account.balance;
+//       }
+//     }
+//     return sum;
+//   },
 
-  getUserWithSmallBalance(min) {
-    let res = [];
+//   getUserWithSmallBalance(min) {
+//     let res = [];
 
-    for (let user of this.users) {
-      let totalBalance = this.getTotalBalance(user.userId);
+//     for (let user of this.users) {
+//       let totalBalance = this.getTotalBalance(user.userId);
 
-      if (totalBalance < min) {
-        res.push(user);
-      }
-    }
+//       if (totalBalance < min) {
+//         res.push(user);
+//       }
+//     }
 
-    return res;
-  },
+//     return res;
+//   },
 
-  getVipUsers(max) {
-    let res = [];
-    for (let user of this.users) {
-      let totalBalance = this.getTotalBalance(user.userId);
-      if (totalBalance > max) {
-        res.push(user);
-      }
-    }
-    return res;
-  },
-};
+//   getVipUsers(max) {
+//     let res = [];
+//     for (let user of this.users) {
+//       let totalBalance = this.getTotalBalance(user.userId);
+//       if (totalBalance > max) {
+//         res.push(user);
+//       }
+//     }
+//     return res;
+//   },
+// };
 
-let randomID = () => {
-  return Math.floor((1 + Math.random()) * 0x10000)
-    .toString(16)
-    .substring(1);
-};
+// let randomID = () => {
+//   return Math.floor((1 + Math.random()) * 0x10000)
+//     .toString(16)
+//     .substring(1);
+// };
 
 // =======================
 
-bank.addUser('1', '1');
-const accountId = bank.account[0].accountId;
-const userId = bank.users[0].userId;
+// bank.addUser('1', '1');
+// const accountId = bank.account[0].accountId;
+// const userId = bank.users[0].userId;
 
-bank.deposit(1000, accountId);
-bank.deposit(1000, accountId);
-bank.deposit(1000, accountId);
-bank.withdraw(700, accountId);
-bank.createAccount(userId);
+// bank.deposit(1000, accountId);
+// bank.deposit(1000, accountId);
+// bank.deposit(1000, accountId);
+// bank.withdraw(700, accountId);
+// bank.createAccount(userId);
 
-bank.deleteUser(userId);
+// bank.deleteUser(userId);
 
-console.log(bank.users);
-console.log(bank.account);
+// console.log(bank.users);
+// console.log(bank.account);
+
+// -------------------------
+
+const arr = [4, 0, 0, 0, 4, 2, 2, 4];
+
+function foo(arr) {
+  let count = 0;
+
+  while (arr.some(el => el > 0)) {
+    const max = Math.max(...arr);
+    const firstMax = arr.indexOf(max);
+    const lastMax = arr.lastIndexOf(max);
+
+    arr[lastMax]--;
+    if (firstMax !== lastMax) {
+      for (let i = firstMax; i < lastMax; i++) {
+        if (arr[i] === max) arr[i]--;
+        else count++;
+      }
+    }
+  }
+
+  return count;
+}
+
+console.log(foo(arr));
